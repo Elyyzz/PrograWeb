@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>-- Museos de Arte --</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Estilos_Museos.css" type="text/css" rel="stylesheet">
+        <link href="styles.css" type="text/css" rel="stylesheet" >        
+        <link href="EstilosCarrusel.css" type="text/css" rel="stylesheet" >
+        <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="MuseoScript.js" type="text/javascript"></script>
+
+    </head>
+    <body >
+        <header class="fondos">
+            <h1><label>Museos ArtMex </label></h1>
+        </header>
+        <div id="Contenido">
+            <!--Carrusel-->
+            <div id="page">
+                <section>
+                    <div id="slider-container">
+                        <div id="slider-box">
+                            <div class="slider-element">
+                                <article class="element-red">
+                                </article>
+                            </div>
+                            <div class="slider-element">
+                                <article class="element-green">
+                                </article>
+                            </div>
+                            <div class="slider-element">
+                                <article class="element-blue">
+                                </article>                            
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+            </div>
+            <!--Menu-->
+            <div id="cssmenu">
+                <ul> 
+                    <li class='active'>
+                        <a  id="InicioMenu">Inicio</a>
+                    </li>
+                    <li class='active has-sub' >
+                        <a id="MuseosVarios" >Museos</a>
+                        <ul>
+                            <li>
+                                <a>Museo Nacional de Antropología</a>
+                            </li>
+                            <li>
+                                <a>Museo de Historia Natural</a>
+                            </li>
+                            <li>
+                                <a>Museo de Historia Mexicana</a>
+                            </li>
+                            <li>
+                                <a>Otros...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='active has-sub'>
+                        <a>Obras Favoritas</a>
+                        <ul>
+                            <li id="Monalisa">
+                                <a >Mona Lisa</a>
+                            </li>
+                            <li>
+                                <a>Relojes  Blandos</a>
+                            </li>
+                            <li>
+                                <a>El beso</a>
+                            </li>
+                            <li id="ObrasOt">
+                                <a>Otras...</a>
+                            </li>
+                        </ul>
+                    </li> 
+                    <li class='active has-sub'>
+                        <a>Mas...</a>
+                        <ul>
+                            <li>
+                                <a>Corrientes</a>
+                            </li>
+                            <li>
+                                <a>Artistas</a>
+                            </li>
+                        </ul>
+                    </li> 
+                    <input  id="MenuBuscar"  type="text" placeholder="Buscar">
+                    <input  id="BuscarBtn"  type="button"  style="cursor: pointer" value="">
+                </ul>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <table id="ContenidoPrincipal">
+                <tr>
+                    <td id="ContenidoPrincipal1">
+                        <div id="cambiando">
+                            <div id="home">
+                                <p>
+                                <blockquote id="frase">
+                                    <h1>"La vida  imita  al arte mucho mas  que el arte  imita  a la vida..."  </h1>
+                                </blockquote>
+
+                                <blockquote id="quienes">
+                                    Museos  ArtMex  es  una aplicación dedicada a el arte que  se  encuentra en los  
+                                    museos de México, en ella  podrá encontrar  una  gran variedad  de  obras, artistas 
+                                    y diferentes  tipos de corrietes,  asi como los  diferentes  museos que  se encuentran 
+                                    registrados en ella. 
+
+                                </blockquote>
+                                <br>
+                                <blockquote id="frase">
+                                    <h3>"Muere  lentamente  quien no viaja, quien no lee, quien  no oye  música, quien no encuentra 
+                                        gracia en si mismo..."  </h3>
+                                </blockquote>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td id="ContenidoPrincipal2">
+                        <!--noticias-->
+                        <b><label id="Etqnoticias">Noticias</label></b>
+                        <table id="noticia" class="bordes">
+                            <tr>
+                                <td>
+                                    <label>Exposiciones</label><br>
+                                    <img src="Obra1.jpg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="conferencias">
+                                    <label>Conferencias</label><br>
+                                    <img src="fondo.jpg">
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <!--Contacto-->
+                        <div id="Contacto_museo" class="bordes">
+                            <br>
+                            <b><label>Contactanos</label></b>
+                            <br>
+                            <img class="iconos" src="facebook.png" style="cursor: pointer">
+                            <img class="iconos" src="twit.png" style="cursor: pointer">
+                            <img class="iconos" src="arroba.jpg" style="cursor: pointer">
+
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--eventos-->
+            <div id="eventos">
+                <b><label>Proximos eventos</label></b><br><br><br>
+                <table id="events">
+                    <tr>
+                        <td>
+                            <img src="Obra3.jpg">
+                            <blockquote> Melodia de la noche, por Leonid Fremov
+                            </blockquote>
+                        </td>
+                        <td>
+                            <img src="Obra2.jpg">
+                            <blockquote> Expo-Pintura de Tamayo,  23/Marzo/2015, 
+                                Sala  E Museo  Central Cd.  Mexico.
+                            </blockquote>
+                        </td>
+                        <td>
+                            <img src="Obra1.jpg">
+                            <blockquote> Expo-Pintura de Tamayo,  23/Marzo/2015, 
+                                Sala  E Museo  Central Cd.  Mexico.
+                            </blockquote>
+                        </td>
+                        <td>
+                            <img src="fondo.jpg">
+                            <blockquote> Expo-Pintura de Tamayo,  23/Marzo/2015, 
+                                Sala  E Museo  Central Cd.  Mexico.
+                            </blockquote>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <footer class="fondos">
+            <table id="Footer_tabla">
+                <tr>
+                    <td>
+                        <label class="EtqFooter">Autor:</label><br>
+                        <label class="EtqFooter">Barrueta Macedo Elizabeth</label><br>
+                        <label class="EtqFooter">Derechos Reservados</label>
+                        <img id="copy" src="220px-Copyright.svg.png">
+
+                    </td>
+                    <td class="borders">
+                        <a href="javascript:window.open('http://validator.w3.org/check?uri='+escape(window.location));void%200" >
+                            <img id="validator" src="htmlValidator.jpg" style="cursor: pointer" >
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+        <div id="FondoDObra" style="display: none"></div>
+        <!--                <br>-->
+        <div id="DetObra" style="display: none">
+            <table>2
+                <tr>
+                    <td>
+                        <img src="MonaLisa.jpg">
+                    </td>
+                    <td>
+                        <p>
+                            <label class="EtqIzq">Nombre:</label><label class="EtqDer">Monalisa</label><br>
+                            <label class="EtqIzq">Artista:</label><label class="EtqDer"> Leonardo da Vinci  </label><br>
+                            <label class="EtqIzq">Corriente:</label><label class="EtqDer"> Renacimiento </label><br>
+                            <label class="EtqIzq">Ubicación:</label><label class="EtqDer"> Museo de  Louvre</label><br>
+                            <label class="EtqIzq">Descripcion: </label><label class="EtqDer"> Retrato con técnica de pintura al aceite </label><br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="DetObra1" style="display: none">
+            <table>
+                <tr>
+                    <td>
+                        <img src="Obra1.jpg">
+                    </td>
+                    <td>
+                        <p>
+                            <label>Nombre:Monalisa </label><br>
+                            <label>Artista: Leonardo da Vinci  </label><br>
+                            <label>Corriente: Renacimiento </label><br>
+                            <label>Ubicación: Museo de  Louvre</label><br>
+                            <label>Descripcion: Retrato con técnica de pintura al aceite  </label><br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
